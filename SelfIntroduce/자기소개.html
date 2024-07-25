@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
     <style>
         header {
-            background: white;
+            background: lightgray
         }
         body {
             font-family: "Noto Serif KR", serif;
-            background: lavender;
+            background: white;
             text-align: justify;
         }
         email {
@@ -21,9 +21,9 @@
         }
 
         header {
-            background: blue;
-            width: 500px;
-            height: 50px;
+            background: lightgray;
+            width: 2000px;
+            height: 300px;
         }
 
         nav {
@@ -59,10 +59,29 @@
         }
 
         aside {
-            float: left;
-            width: 80px;
-            height: 300px;
-            background: cornsilk;
+            float: right;
+            right : 1500px;
+            width: 300px;
+            height: 1200px;
+            background: white;
+        }
+
+        
+        #hello {
+            text-align: center;
+        }
+
+        #chipichipi {
+            text-align: center;
+        }
+        .catgifs {
+            display: flex;
+            justify-content: space-between; 
+            flex-wrap: wrap; 
+        }
+
+        .centers {
+        display: block; /* Ensure images are displayed as block elements */
         }
     </style>
 </head>
@@ -73,23 +92,37 @@
 
 
     <header>
-    <h1>안녕하세요</h1>    
+    <div id="hello"><h1>안녕하세요</h1>    
     <h2>안녕하세요</h2>    
     <h3>안녕하세요</h3>    
     <h4>안녕하세요</h4>    
     <h5>안녕하세요</h5>    
-    <h6>안녕하세요</h6>
+    <h6>안녕하세요</h6></div>
     </header>
-    <img src="chipi-chapa.gif">
-    <img src="chipi-chapa.gif">
-    <img src="chipi-chapa.gif">
-    <img src="chipi-chapa.gif">
-    <img src="chipi-chapa.gif">
+    <br>
+    <div id="chipichipi">
+    <img src="chipi-chapa.gif" class="center" width="200" height="auto">
+    <img src="chipi-chapa.gif" class="center" width="200" height="auto">
+    <img src="chipi-chapa.gif" class="center" width="200" height="auto">
+    <img src="chipi-chapa.gif" class="center" width="200" height="auto">
+    <img src="chipi-chapa.gif" class="center" width="200" height="auto">
+    <img src="chipi-chapa.gif" class="center" width="200" height="auto">
+    <img src="chipi-chapa.gif" class="center" width="200" height="auto">
+    <img src="chipi-chapa.gif" class="center" width="200" height="auto">
+    <img src="chipi-chapa.gif" class="center" width="200" height="auto">
+    </div>
+    <aside class="catgifs">
+        <img id="cat1" src="cat-cats.gif" height="300px" width="300px" class="centers">
+        <img id="cat2" src="happy-cat-happy-happy-cat.gif" height="300px" width="300px" class="centers">
+        <img id="cat3" src="insane-kitten.gif" height="300px" width="300px" class="centers">
+        <img class="cat4" src="maxwell-cat.gif" height="300px" width="300px" class="centers">
+        <img id="cat5" src="watch-a-fat-cat-dance-an-american-dance-girlfriend.gif" height="300px" width="300px" class="centers">
+        </aside>
 
     <br><br><br><br><br>
+    
 
-    
-    
+
 
     <section>
     <article class="selfIntro1">저는 하이미디어학원에서 Ai 모델 서빙 활용 자바 풀스택 개발자 양성과정을 수강중인 <b>이규섭</b>이라고 합니다.<br><br>
@@ -135,13 +168,7 @@
 
     </section>
 
-    <aside>
-    <img id="cat1" src="cat-cats.gif" height="150px" width="150px"><br>
-    <img id="cat2" src="happy-cat-happy-happy-cat.gif" height="150px" width="150px"><br>
-    <img id="cat3" src="insane-kitten.gif" height="150px" width="150px"><br>
-    <img class="cat4" src="maxwell-cat.gif" height="150px" width="150px"><br>
-    <img id="cat5" src="watch-a-fat-cat-dance-an-american-dance-girlfriend.gif" height="150px" width="150px"><br>
-    </aside>
+    
     
 
 </body>
